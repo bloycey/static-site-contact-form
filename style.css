@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    max-width: 100%;
+}
+
+.col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-container {
+    background-color: #f6f6f6;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+label {
+    color: #606061;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    color: #606061;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 26px;
+    font-size: 16px;
+    resize: vertical
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  #enquiry {
+      height: 200px;
+  }
+
+  #confirmation-note {
+    color: #606061;
+    display: none;
+  }
+
+  #confirmation-note p {
+      margin-bottom: 5px;
+  }
+
+  

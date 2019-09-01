@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Static Site Contact Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Static Site Enquiry Form</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container form-container">
+        <div class="row">
+            <div class="col">
+                <form id="contactForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="firstname" placeholder="Your name.." required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="lastname" placeholder="example@email" required>
+                    <label for="about">What is your enquiry about?</label>
+                    <select id="about" name="about" required>
+                        <option value="General Enquiry">General Enquiry</option>
+                        <option value="Pricing">Pricing</option>
+                        <option value="Employment">Employment Opportunities</option>
+                    </select>
+                    <label for="enquiry">How can we help?</label>
+                    <textarea id="enquiry" name="enquiry" placeholder="What is your enquiry?" required></textarea>
+                    <input type="submit" value="Submit Enquiry">
+                    <div id="confirmation-note">
+                        <p>Thanks for your enquiry! We'll get back to you soon.</p>
+                        <small>Dev Note: You can view the issue that was generated here: <a id="issue-link"></div></small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="custom.js"></script>
+    </body>
+</html>
