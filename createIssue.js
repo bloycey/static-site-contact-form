@@ -1,4 +1,4 @@
-async function createIssue({endpoint, token, formTitle, labelId, formIds, callbackFn = () => null}) {
+async function createIssue({repoDetails, token, formTitle, labelId, formIds, callbackFn = () => null}) {
  
     const convertFieldsToAPIBody = fieldsObject => {
         const keys = Object.keys(fieldsObject);
@@ -22,6 +22,9 @@ async function createIssue({endpoint, token, formTitle, labelId, formIds, callba
     const headers = {
         "Authorization" : `Token ${token}`
     }
+
+    const { accountName, repoName } = repoDetails;
+    const endpoint = `https://api.github.com/repos/${accountName}/${repoName}/issues`
 
     await fetch(endpoint, {
         method: "POST",
