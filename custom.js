@@ -7,6 +7,7 @@ const formTitle = {
 }
 const labelId = "about";
 const confirmationNote = document.getElementById("confirmation-note");
+
 const showConfirmation = () => {
     confirmationNote.style.display = "block";
         setTimeout(() => {
