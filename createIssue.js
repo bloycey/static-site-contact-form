@@ -1,9 +1,5 @@
 async function createIssue({endpoint, token, formTitle, labelId, formIds, callbackFn = () => null}) {
-    
-    const headers = {
-        "Authorization" : `Token ${token}`
-    }
-    
+ 
     const convertFieldsToAPIBody = fieldsObject => {
         const keys = Object.keys(fieldsObject);
         const values = Object.values(fieldsObject);
@@ -16,10 +12,15 @@ async function createIssue({endpoint, token, formTitle, labelId, formIds, callba
     const createLabels = labelId => ["Contact Form", document.getElementById(labelId).value];
     
     const fields = formIds.reduce(fieldsToObject, {});
+
     const payLoad = {
         title: createTitle(formTitle),
         labels: createLabels(labelId),
         body: convertFieldsToAPIBody(fields).join("\n"),
+    }
+
+    const headers = {
+        "Authorization" : `Token ${token}`
     }
 
     await fetch(endpoint, {
