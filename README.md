@@ -89,7 +89,7 @@ contactForm.addEventListener("submit", (e) => {
 });
 ```
 
-This simply prevents the page from reloading on submission, executes the function, and then clears the form.
+This simply prevents the page from reloading on submission, executes the function, and finally clears the form.
 
 The HTML should be similar to the code in `index.html`, however you can add as many fields as you like, and also modify the CSS to your liking. 
 
