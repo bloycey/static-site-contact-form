@@ -22,9 +22,6 @@ Some possible work-arounds:
 
 1. Set up a new github repo on a seperate anonymous github account purely for receiving emails from this service. Then make that repository private. This isn't a perfect solution but it at least somewhat solves all 3 issues. Someone could stil use your API key to try and meddle with the repository, but since this repository will only have 1 empty repository on there and no personal details the damage an attacker could do would be minimal. 
 
-I have used this work-around in the demo here:
-Which posts the data to a dummy repo here: https://github.com/static-contact-form-example/static-contact-form-example/issues
-
 2. Host the site on Netlify and use environment variables. This is not something that I have figured out the specifics for, however if someone can get this working with Netlify environment variables I would welcome any Pull Requests updating this repo with the information! I *think* Netlify provides functionality for hiding environment variables whilst still serving a static site. It is defintely something to look into!
 
 ## So how do I use this thing?
