@@ -1,4 +1,4 @@
-const token = "your-personal-access-token-here" // This is a dummy account set up purely for testing. Usually it is not advised to EVER expose a key like this.
+const token = "your-personal-access-token-here" // Generate a Personal Access Token here: https://github.com/settings/tokens
 const contactForm = document.getElementById("contactForm");
 const formIds = ["name", "email", "enquiry", "about"]
 const formTitle = {
